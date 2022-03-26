@@ -1,0 +1,9 @@
+<h1>List of Student:</h1>
+<div
+  *ngFor="let student of students1"
+  appStudentHighLight
+  [defaultColor]="'blue'"
+  [highLightColor]="'green'"
+>
+  ID:{{ student.id }}, Name:{{ student.name }}
+</div>
